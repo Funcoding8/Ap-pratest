@@ -1,4 +1,16 @@
-first="Aidan"
-middle ="Nicolas"
-last="Garcia"
-print("my name is",first,middle,last)
+# first="Aidan"
+# middle ="Nicolas"
+# last="Garcia"
+# print("my name is",first,middle,last)
+
+toDoList = ["Math Homework", "Cook Dinner", "Fold Laundry"]
+
+def addItem(item):
+   print(toDoList)
+   return toDoList
+
+userAns = input("Do you want to add to your list or quit? A/Q")
+while userAns == "A":
+   item = input("What item do you want to add?")
+   addItem(item)
+   userAns = input("Do you want to add to your list or quit? A/Q")
